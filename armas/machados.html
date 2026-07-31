@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Optimization -->
+    <title>Wiki Dark Souls 1 - Machados e Grandes Machados (Remastered)</title>
+    <meta name="description" content="Guia completo de Machados e Grandes Machados em Dark Souls 1 (Remastered). Saiba mais sobre quebra de postura, força bruta e peso destas armas.">
+    
+    <!-- Stylesheets & Icons -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ============================================================== -->
+    <!-- CABEÇALHO DA PÁGINA                                            -->
+    <!-- ============================================================== -->
+    <header class="cabecalho-principal">
+        <div class="centralizado logo-container">
+            <a href="../index.html" rel="home">
+                <img src="../imagens/Dark-Souls-Remastered-Transparent-PNGmenor.png" alt="Logotipo do jogo Dark Souls Remastered">
+            </a>
+        </div>
+        <!-- Menu de Navegação Interativo (Carregado dinamicamente via JS) -->
+        <div id="barra-interativa"></div>
+    </header>
+
+    <!-- ============================================================== -->
+    <!-- CONTEÚDO PRINCIPAL                                             -->
+    <!-- ============================================================== -->
+    <main class="principal">
+        <h1>Machados e Grandes Machados</h1>
+        <p>Os **Machados** em Dark Souls 1 são armas pesadas e violentas, focadas em desferir golpes verticais esmagadores. Elas recompensam builds dedicadas a **Força** com um dano bruto formidável e alta quebra de postura (poise damage) dos inimigos.</p>
+
+        <h2>Machados Comuns</h2>
+        <p>Oferecem um meio-termo interessante entre a velocidade das espadas retas e o impacto dos martelos. O <em>Machado de Batalha (Battle Axe)</em> é uma arma inicial excelente e confiável. O <em>Machado de Mão (Hand Axe)</em>, com sua animação rápida, é o preferido de piromantes devido ao seu baixo custo de atributos.</p>
+
+        <h2>Grandes Machados (Greataxes)</h2>
+        <p>Armas imensas e extremamente pesadas. Embora possuam animações lentas e deixem o jogador vulnerável em caso de erro, elas causam alguns dos maiores danos físicos de todo o jogo. O <em>Grande Machado do Demônio (Demon's Greataxe)</em> é famoso por alcançar o escalonamento máximo **S em Força**, sendo capaz de esmagar escudos inimigos com um único golpe descendente.</p>
+
+        <p class="nota-desenvolvimento">⚠️ Nota: Tabelas de atributos para esta categoria serão adicionadas em breve.</p>
+    </main>
+
+    <!-- ============================================================== -->
+    <!-- RODAPÉ DA PÁGINA                                               -->
+    <!-- ============================================================== -->
+    <footer class="rodape-principal">
+        <div class="conteudo-rodape">
+            <p class="creditos">© 2026 Wiki Dark Souls 1 - Criado como projeto de portfólio. Desenvolvido por Pablo Machado.</p>
+            <p class="direitos">Dark Souls™ Remastered é propriedade intelectual da FromSoftware e Bandai Namco Entertainment. Este site não é afiliado às empresas desenvolvedoras ou publicadoras.</p>
+            <div class="links-sociais">
+                <a href="https://discord.gg/SPxyV79PPE" target="_blank" rel="noopener noreferrer" class="link-social discord">
+                    <i class="fa-brands fa-discord"></i> Discord Oficial do Projeto
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================== -->
+    <!-- SCRIPTS                                                       -->
+    <!-- ============================================================== -->
+    <script>
+        // Carrega o menu de navegação dinâmico
+        fetch('../barra.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('barra-interativa').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o menu de navegação:', error));
+    </script>
+</body>
+</html>

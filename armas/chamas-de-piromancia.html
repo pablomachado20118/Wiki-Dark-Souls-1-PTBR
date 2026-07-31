@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Optimization -->
+    <title>Wiki Dark Souls 1 - Chama de Piromancia (Remastered)</title>
+    <meta name="description" content="Guia completo da Chama de Piromancia em Dark Souls 1 (Remastered). Saiba como aprimorar sua chama e utilizar feitiços de fogo sem requisitos de atributos.">
+    
+    <!-- Stylesheets & Icons -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ============================================================== -->
+    <!-- CABEÇALHO DA PÁGINA                                            -->
+    <!-- ============================================================== -->
+    <header class="cabecalho-principal">
+        <div class="centralizado logo-container">
+            <a href="../index.html" rel="home">
+                <img src="../imagens/Dark-Souls-Remastered-Transparent-PNGmenor.png" alt="Logotipo do jogo Dark Souls Remastered">
+            </a>
+        </div>
+        <!-- Menu de Navegação Interativo (Carregado dinamicamente via JS) -->
+        <div id="barra-interativa"></div>
+    </header>
+
+    <!-- ============================================================== -->
+    <!-- CONTEÚDO PRINCIPAL                                             -->
+    <!-- ============================================================== -->
+    <main class="principal">
+        <h1>Chama de Piromancia</h1>
+        <p>A **Chama de Piromancia (Pyromancy Flame)** é a ferramenta exclusiva utilizada para conjurar feitiços de fogo (Piromancias) em Dark Souls 1. Ela é amplamente considerada uma das melhores opções de suporte do jogo devido à sua mecânica única de dano e aprimoramento.</p>
+
+        <h2>A Grande Vantagem da Piromancia</h2>
+        <p>Ao contrário dos milagres e feitiçarias tradicionais, as Piromancias **não exigem nenhum investimento em atributos como Inteligência ou Fé** para aumentar seu dano. Embora a chama mostre um escalonamento de Inteligência na tela do jogo, esse bônus afeta apenas o ataque físico (soco) com a chama. O poder real das piromancias escala exclusivamente com o **nível de aprimoramento da própria chama**.</p>
+
+        <h2>Como Aprimorar</h2>
+        <p>Você pode gastar almas com instrutores como <em>Laurentius de do Pântano</em> ou <em>Quelana de Izalith</em> para melhorar a chama:</p>
+        
+        <ul>
+            <li><strong>Chama Padrão (+0 a +15):</strong> Aprimorada usando almas com Laurentius, Eingyi ou Quelana.</li>
+            <li><strong>Ascensão da Chama (+0 a +5):</strong> Ao atingir +15, Quelana no Pântano de Blighttown pode "ascender" a sua chama para uma versão superior (que possui um ícone mais brilhante e maior poder base), permitindo melhorá-la mais 5 níveis adicionais.</li>
+        </ul>
+
+        <p class="nota-desenvolvimento">⚠️ Nota: Tabelas de atributos para esta categoria serão adicionadas em breve.</p>
+    </main>
+
+    <!-- ============================================================== -->
+    <!-- RODAPÉ DA PÁGINA                                               -->
+    <!-- ============================================================== -->
+    <footer class="rodape-principal">
+        <div class="conteudo-rodape">
+            <p class="creditos">© 2026 Wiki Dark Souls 1 - Criado como projeto de portfólio. Desenvolvido por Pablo Machado.</p>
+            <p class="direitos">Dark Souls™ Remastered é propriedade intelectual da FromSoftware e Bandai Namco Entertainment. Este site não é afiliado às empresas desenvolvedoras ou publicadoras.</p>
+            <div class="links-sociais">
+                <a href="https://discord.gg/SPxyV79PPE" target="_blank" rel="noopener noreferrer" class="link-social discord">
+                    <i class="fa-brands fa-discord"></i> Discord Oficial do Projeto
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================== -->
+    <!-- SCRIPTS                                                       -->
+    <!-- ============================================================== -->
+    <script>
+        // Carrega o menu de navegação dinâmico
+        fetch('../barra.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('barra-interativa').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o menu de navegação:', error));
+    </script>
+</body>
+</html>

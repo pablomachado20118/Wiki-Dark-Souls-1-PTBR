@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Optimization -->
+    <title>Wiki Dark Souls 1 - Arsenal e Guia Geral de Armas (Remastered)</title>
+    <meta name="description" content="Guia geral do arsenal de Dark Souls 1 (Remastered) em português. Entenda o sistema de escalonamento, requisitos, tipos de danos e efeitos auxiliares das armas.">
+    
+    <!-- Stylesheets & Icons -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ============================================================== -->
+    <!-- CABEÇALHO DA PÁGINA                                            -->
+    <!-- ============================================================== -->
+    <header class="cabecalho-principal">
+        <div class="centralizado logo-container">
+            <a href="../index.html" rel="home">
+                <img src="../imagens/Dark-Souls-Remastered-Transparent-PNGmenor.png" alt="Logotipo do jogo Dark Souls Remastered">
+            </a>
+        </div>
+        <!-- Menu de Navegação Interativo (Carregado dinamicamente via JS) -->
+        <div id="barra-interativa"></div>
+    </header>
+
+    <!-- ============================================================== -->
+    <!-- CONTEÚDO PRINCIPAL                                             -->
+    <!-- ============================================================== -->
+    <main class="principal">
+        <h1>Arsenal de Lordran</h1>
+        <p>O sistema de combate de Dark Souls 1 é renomado pela sua profundidade técnica e variedade tática. Cada arma possui seu próprio conjunto de movimentos, velocidade, alcance e impacto na postura dos inimigos. Dominar o arsenal é a chave para sobreviver aos perigos de Lordran.</p>
+
+        <h2>Mecânicas Fundamentais das Armas</h2>
+        <p>Para escolher a arma ideal para a sua build, é importante entender os seguintes pilares:</p>
+
+        <ul>
+            <li><strong>Requisitos Estatísticos:</strong> Cada arma exige valores mínimos em Força, Destreza, Inteligência ou Fé. Caso não cumpra os requisitos de Força, você ainda pode empunhar a arma com as duas mãos (o que aumenta sua Força em 50%).</li>
+            <li><strong>Bônus de Parâmetro:</strong> O dano da arma aumenta de acordo com seus atributos. A escala vai de <strong>S</strong> (melhor) a <strong>E</strong> (pior), além de armas sem escalonamento (-).</li>
+            <li><strong>Tipos de Dano:</strong> O dano pode ser Físico (dividido em Corte, Estocada, Impacto e Normal), Mágico, Fogo ou Raio. Inimigos têm resistências diferentes a cada um desses tipos.</li>
+            <li><strong>Efeitos Auxiliares:</strong> Algumas armas possuem efeitos passivos que acumulam a cada golpe, como Sangramento, Veneno, Tóxico, Divino ou Oculto.</li>
+        </ul>
+
+        <h2>Selecione uma Categoria</h2>
+        <p>Navegue pelo menu superior ou use os links rápidos da página inicial para consultar as tabelas detalhadas de atributos de cada classe de arma.</p>
+    </main>
+
+    <!-- ============================================================== -->
+    <!-- RODAPÉ DA PÁGINA                                               -->
+    <!-- ============================================================== -->
+    <footer class="rodape-principal">
+        <div class="conteudo-rodape">
+            <p class="creditos">© 2026 Wiki Dark Souls 1 - Criado como projeto de portfólio. Desenvolvido por Pablo Machado.</p>
+            <p class="direitos">Dark Souls™ Remastered é propriedade intelectual da FromSoftware e Bandai Namco Entertainment. Este site não é afiliado às empresas desenvolvedoras ou publicadoras.</p>
+            <div class="links-sociais">
+                <a href="https://discord.gg/SPxyV79PPE" target="_blank" rel="noopener noreferrer" class="link-social discord">
+                    <i class="fa-brands fa-discord"></i> Discord Oficial do Projeto
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================== -->
+    <!-- SCRIPTS                                                       -->
+    <!-- ============================================================== -->
+    <script>
+        // Carrega o menu de navegação dinâmico
+        fetch('../barra.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('barra-interativa').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o menu de navegação:', error));
+    </script>
+</body>
+</html>

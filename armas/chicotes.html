@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Optimization -->
+    <title>Wiki Dark Souls 1 - Chicotes (Remastered)</title>
+    <meta name="description" content="Guia de Chicotes em Dark Souls 1 (Remastered). Saiba como utilizar essa classe exótica de armas que ignora parries mas não executa críticos.">
+    
+    <!-- Stylesheets & Icons -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ============================================================== -->
+    <!-- CABEÇALHO DA PÁGINA                                            -->
+    <!-- ============================================================== -->
+    <header class="cabecalho-principal">
+        <div class="centralizado logo-container">
+            <a href="../index.html" rel="home">
+                <img src="../imagens/Dark-Souls-Remastered-Transparent-PNGmenor.png" alt="Logotipo do jogo Dark Souls Remastered">
+            </a>
+        </div>
+        <!-- Menu de Navegação Interativo (Carregado dinamicamente via JS) -->
+        <div id="barra-interativa"></div>
+    </header>
+
+    <!-- ============================================================== -->
+    <!-- CONTEÚDO PRINCIPAL                                             -->
+    <!-- ============================================================== -->
+    <main class="principal">
+        <h1>Chicotes</h1>
+        <p>Os **Chicotes (Whips)** constituem uma das categorias de armas mais exóticas e nichadas em Dark Souls 1. Embora seu uso exija habilidade e paciência, eles possuem propriedades táticas muito específicas.</p>
+
+        <h2>Propriedades Únicas de Combate</h2>
+        <ul>
+            <li><strong>Imunes a Parry:</strong> Nenhum inimigo no jogo, incluindo outros jogadores no PvP, pode realizar um *Parry* (aparar) contra ataques de chicotes. Isso os torna uma opção tática muito interessante para punir oponentes defensivos.</li>
+            <li><strong>Sem Acertos Críticos:</strong> Em contrapartida, os chicotes **não podem realizar ataques críticos**, impossibilitando a execução de *Backstabs* (ataques pelas costas) ou *Ripostes* após um parry de sua parte.</li>
+            <li><strong>Dano e Escalonamento:</strong> Possuem bom alcance médio e escalonamento focado em **Destreza**, porém o dano base por golpe tende a ser inferior ao de outras classes de armas ágeis.</li>
+        </ul>
+
+        <h2>Tipos de Chicotes</h2>
+        <p>O <em>Chicote (Whip)</em> padrão oferece dano físico básico. Já o <em>Chicote de Espinhos (Notched Whip)</em> causa menos dano físico bruto, mas aplica o efeito auxiliar de **Sangramento (Bleed)** nos inimigos, tornando-se muito mais letal em combates prolongados.</p>
+
+        <p class="nota-desenvolvimento">⚠️ Nota: Tabelas de atributos para esta categoria serão adicionadas em breve.</p>
+    </main>
+
+    <!-- ============================================================== -->
+    <!-- RODAPÉ DA PÁGINA                                               -->
+    <!-- ============================================================== -->
+    <footer class="rodape-principal">
+        <div class="conteudo-rodape">
+            <p class="creditos">© 2026 Wiki Dark Souls 1 - Criado como projeto de portfólio. Desenvolvido por Pablo Machado.</p>
+            <p class="direitos">Dark Souls™ Remastered é propriedade intelectual da FromSoftware e Bandai Namco Entertainment. Este site não é afiliado às empresas desenvolvedoras ou publicadoras.</p>
+            <div class="links-sociais">
+                <a href="https://discord.gg/SPxyV79PPE" target="_blank" rel="noopener noreferrer" class="link-social discord">
+                    <i class="fa-brands fa-discord"></i> Discord Oficial do Projeto
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================== -->
+    <!-- SCRIPTS                                                       -->
+    <!-- ============================================================== -->
+    <script>
+        // Carrega o menu de navegação dinâmico
+        fetch('../barra.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('barra-interativa').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o menu de navegação:', error));
+    </script>
+</body>
+</html>
